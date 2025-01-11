@@ -50,10 +50,10 @@ public class SampleDrive extends CommandOpMode {
         );
 
         swerveDrive.init(AxonSwerveModule.class, new SwerveModuleConfiguration[]{
-                SwerveModuleConfiguration.create("fl_drive", "fl_angle", "fl_encoder"),
-                SwerveModuleConfiguration.create("fr_drive", "fr_angle", "fr_encoder"),
-                SwerveModuleConfiguration.create("bl_drive", "bl_angle", "bl_encoder"),
-                SwerveModuleConfiguration.create("br_drive", "br_angle", "br_encoder")
+                SwerveModuleConfiguration.create("FL", "sFL", "eFL"),
+                SwerveModuleConfiguration.create("FR", "sFR", "eFR"),
+                SwerveModuleConfiguration.create("BL", "sBL", "eBL"),
+                SwerveModuleConfiguration.create("BR", "sBR", "eBR")
         });
 
         swerveSubsystem = new ExampleSwerveSubsystem(swerveDrive);
